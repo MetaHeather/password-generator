@@ -6,15 +6,15 @@
 
 <div>
   <label for="letters">Use Letters</label>
-  <input type="checkbox" id="letters">
+  <input (change)="onChangeUseLetters()" type="checkbox" id="letters">
 </div>
 <div>
   <label for="numbers">Use Numbers</label>
-  <input type="checkbox" id="numbers">
+  <input (change)="onChangeUseNumbers()" type="checkbox" id="numbers">
 </div>
 <div>
   <label for="symbols">Use Symbols</label>
-  <input type="checkbox" id="symbols">
+  <input (change)="onChangeUseSymbols()" type="checkbox" id="symbols">
 </div>
 
 <div>
@@ -23,5 +23,6 @@
 
 <div>
   <label for="">Your Password</label>
-  <input />
+  <input [value]="password" />
 </div>
+
